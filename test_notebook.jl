@@ -61,7 +61,13 @@ ccc = cov(test, AnalyticWeights(wgts), corrected=true)
 (c1, c2, c3) = sqrt(Diagonal(ccc))
 
 # ╔═╡ aff87e1e-7c88-4ec1-a771-537dc1657307
-c1
+sum(wgts .* wgts)
+
+# ╔═╡ 67531f07-3bb7-49bd-b21d-164ac8e298dc
+norm(wgts)
+
+# ╔═╡ 3228c5b5-84e4-4d99-9061-8199688582c5
+rand(MvNormal([1,2], [0.1, 0.2]), 5)
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -82,7 +88,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.8.1"
 manifest_format = "2.0"
-project_hash = "c48766a4507a6d2948cefb9b1d2bddaab629a8ea"
+project_hash = "d8540c24aa18ccb1b7f073d18f625bb603f50125"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
@@ -452,5 +458,7 @@ version = "17.4.0+0"
 # ╠═b1b01984-183f-4a49-929e-b498b196f390
 # ╠═f8191e54-be16-4a89-8297-d53d1db617bd
 # ╠═aff87e1e-7c88-4ec1-a771-537dc1657307
+# ╠═67531f07-3bb7-49bd-b21d-164ac8e298dc
+# ╠═3228c5b5-84e4-4d99-9061-8199688582c5
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
